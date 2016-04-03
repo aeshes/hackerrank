@@ -29,7 +29,7 @@ public:
         if (max_heap.empty())
 	       max_heap.push(value);
         else
-		{
+	{
 	       if(value >= max_heap.top())
 	           min_heap.push(value);
 	       else
@@ -62,7 +62,7 @@ public:
 int main()
 {
     RunningMedian solver;
-	int n, value;
+    int n, value;
     
     std::cin >> n;
     for(int i = 0; i < n; i++)
@@ -70,7 +70,7 @@ int main()
         std::cin >> value;
         solver.push(value);
         std::cout << std::fixed << std::setprecision(2)
-				  << solver.median() << std::endl;
+		  << solver.median() << std::endl;
     }
-	return 0;
+    return 0;
 }
