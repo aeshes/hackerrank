@@ -5,8 +5,7 @@ For example, the median of {3,3,5,9,11} is 55. If there is an even number of int
 then there is no single middle value, and the median is then usually defined to be 
 the mean of the two middle values. For examples, the median of {3,5,7,9} is (5+7)/2=6
 
-Given that integers are read from a data stream, 
-find the median of elements read so far in an efficient way.
+Given that integers are read from a data stream, find the median of elements read so far in an efficient way.
 */
 
 #include <iostream>
@@ -29,7 +28,7 @@ public:
         if (max_heap.empty())
 	       max_heap.push(value);
         else
-		{
+	{
 	       if(value >= max_heap.top())
 	           min_heap.push(value);
 	       else
@@ -62,7 +61,7 @@ public:
 int main()
 {
     RunningMedian solver;
-	int n, value;
+    int n, value;
     
     std::cin >> n;
     for(int i = 0; i < n; i++)
@@ -70,7 +69,7 @@ int main()
         std::cin >> value;
         solver.push(value);
         std::cout << std::fixed << std::setprecision(2)
-				  << solver.median() << std::endl;
+		  << solver.median() << std::endl;
     }
-	return 0;
+    return 0;
 }
