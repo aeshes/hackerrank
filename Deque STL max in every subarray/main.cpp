@@ -1,8 +1,13 @@
+/*
+* Author: aeshes
+*/
+
 #include <iostream>
 #include <vector>
 #include <deque> 
 
 using namespace std;
+
 /*
 * @brief Determine maximum value in each contiguous subarray of given size
 * @param[in] arr - Vector of integers
